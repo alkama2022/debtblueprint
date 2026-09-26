@@ -145,6 +145,130 @@
   .highlight-box p{color:rgba(255,255,255,0.85);}
   .tag{display:inline-block;background:#e2e8f0;border-radius:6px;padding:2px 8px;font-size:8pt;font-weight:500;margin:2px;}
   hr.section-divider{border:none;border-top:2px solid #e2e8f0;margin:20px 0;}
+
+  /* ═══════════════════════════════════════════════ MOBILE RESPONSIVE ══ */
+  @media screen and (max-width:768px){
+    body{font-size:14px;line-height:1.6;}
+
+    /* Cover */
+    .cover{padding:40px 24px;min-height:auto;}
+    .cover-title{font-size:28pt;}
+    .cover-subtitle{font-size:13pt;margin-bottom:24px;}
+    .cover-tagline{font-size:11pt;margin-bottom:32px;}
+    .cover-meta{grid-template-columns:1fr;gap:12px;}
+    .cover-version{position:static;text-align:center;margin-top:24px;}
+    .cover-badge{font-size:8pt;margin-bottom:20px;}
+
+    /* TOC */
+    .toc{padding:24px 0;}
+    .toc h2{font-size:18pt;margin-bottom:20px;}
+    .toc-item{font-size:9pt;}
+
+    /* Typography */
+    h1.section-title{font-size:18pt;}
+    h2.section-sub{font-size:14pt;margin:20px 0 10px;}
+    h3.section-h3{font-size:12pt;margin:16px 0 6px;}
+    h4.section-h4{font-size:11pt;}
+    p{margin-bottom:8px;}
+
+    /* Section header */
+    .section-header{gap:10px;margin-bottom:14px;padding-bottom:10px;}
+    .section-num{font-size:22pt;}
+
+    /* Callout boxes */
+    .callout{padding:12px;margin:12px 0;font-size:9pt;}
+
+    /* Tables - horizontal scroll wrapper */
+    table{font-size:8pt;margin:12px 0;}
+    th, td{padding:8px 10px;}
+    table, .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+
+    /* Code blocks */
+    .code-block{padding:12px;margin:10px 0;}
+    .code-block pre{font-size:8pt;}
+
+    /* Diagram boxes */
+    .diagram{padding:16px;margin:12px 0;}
+    .flow-box{display:block;margin:4px auto;padding:8px 12px;font-size:9pt;}
+
+    /* KPI grid */
+    .kpi-grid{grid-template-columns:1fr;gap:10px;margin:12px 0;}
+    .kpi-num{font-size:18pt;}
+
+    /* State machine */
+    .state-grid{grid-template-columns:repeat(2,1fr);gap:6px;margin:10px 0;}
+    .state-box{font-size:7.5pt;padding:8px;}
+
+    /* Persona cards */
+    .persona-card{padding:14px;margin:10px 0;}
+    .persona-name{font-size:12pt;}
+
+    /* Timeline */
+    .timeline-item{gap:10px;margin-bottom:16px;}
+    .timeline-dot{width:30px;height:30px;font-size:8pt;}
+    .timeline-content{padding:10px;}
+    .timeline-title{font-size:10pt;}
+
+    /* API box */
+    .api-box{padding:12px;}
+    .api-method{font-size:7.5pt;}
+    .api-path{font-size:8pt;word-break:break-all;}
+    .api-desc{font-size:8pt;}
+
+    /* Pricing grid */
+    .pricing-grid{grid-template-columns:1fr;gap:8px;margin:12px 0;}
+    .pricing-card{padding:12px;}
+    .plan-price{font-size:14pt;}
+
+    /* Section wrapper */
+    .section{padding:24px 0;}
+
+    /* Grids collapse to single column */
+    .two-col{grid-template-columns:1fr;gap:12px;}
+    .three-col{grid-template-columns:1fr;gap:10px;}
+
+    /* Highlight box */
+    .highlight-box{padding:16px;margin:12px 0;}
+
+    /* Tags */
+    .tag{font-size:7.5pt;}
+
+    /* Checklist */
+    .checklist li{font-size:9pt;}
+
+    /* Badges */
+    .badge{font-size:7.5pt;padding:2px 8px;}
+
+    /* Risk badges */
+    .risk-high,.risk-med,.risk-low{font-size:7pt;}
+
+    /* Footer */
+    .doc-footer{font-size:8pt;padding:14px 0;}
+  }
+
+  @media screen and (max-width:480px){
+    body{font-size:13px;}
+    .cover{padding:32px 16px;}
+    .cover-title{font-size:24pt;}
+    .cover-subtitle{font-size:12pt;}
+    .cover-tagline{font-size:10pt;}
+    .cover-badge{font-size:7pt;}
+    .section{padding:20px 0;}
+    .state-grid{grid-template-columns:1fr 1fr;}
+    .flow-box{font-size:8pt;}
+    table{font-size:7.5pt;}
+    th,td{padding:6px 8px;}
+    .callout{font-size:8.5pt;}
+    .kpi-num{font-size:16pt;}
+    .highlight-box{padding:14px;}
+  }
+
+  /* Landscape mobile */
+  @media screen and (max-width:768px) and (orientation:landscape){
+    .cover{min-height:auto;}
+    .cover-meta{grid-template-columns:repeat(3,1fr);}
+    .kpi-grid{grid-template-columns:repeat(3,1fr);}
+  }
 </style>
 </head>
 <body>
